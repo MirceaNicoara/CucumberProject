@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite1" verbose="1" >
+
+    <test name="LoginAddEditTest" >
+        <classes>
+            <class name="com.example.TestRunner" />
+        </classes>
+    </test>
+
+    <!--<test name="Regression1">
+        <classes>
+            <class name="test.sample.ParameterSample"/>
+            <class name="test.sample.ParameterTest"/>
+        </classes>
+    </test>-->
+
+</suite>
+
+
+<!--        You can specify package names instead of class names:-->
+<!--<suite name="Suite1" verbose="1" >-->
+<!--<test name="Regression1"   >-->
+<!--    <packages>-->
+<!--        <package name="test.sample" />-->
+<!--    </packages>-->
+<!--</test>-->
+<!--</suite>-->
+
+
+<!--        You can also specify groups and methods to be included and excluded:-->
+<!--<test name="Regression1">-->
+<!--<groups>-->
+<!--    <run>-->
+<!--        <exclude name="brokenTests"  />-->
+<!--        <include name="checkinTests"  />-->
+<!--    </run>-->
+<!--</groups>-->
+
+<!--<classes>-->
+<!--    <class name="test.IndividualMethodsTest">-->
+<!--        <methods>-->
+<!--            <include name="testMethod" />-->
+<!--        </methods>-->
+<!--    </class>-->
+<!--</classes>-->
+<!--</test>-->
+
+
+<!--        By default, TestNG will run your tests in the order they are found in the XML file.-->
+<!--        If you want the classes and methods listed in this file to be run in an unpredictable order, set the preserve-order attribute to false-->
+<!--<test name="Regression1" preserve-order="false">-->
+<!--<classes>-->
+
+<!--    <class name="test.Test1">-->
+<!--        <methods>-->
+<!--            <include name="m1" />-->
+<!--            <include name="m2" />-->
+<!--        </methods>-->
+<!--    </class>-->
+
+<!--    <class name="test.Test2" />-->
+
+<!--</classes>-->
+<!--</test>-->
+
+
+
+
+
+
+
+
+
+
