@@ -3,137 +3,21 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-07-23T06:17:28.070Z",
+        "start_timestamp": "2021-07-26T11:40:29.146Z",
         "line": 3,
-        "name": "The customer must be able to add users into the application",
+        "name": "The customer must be able to log in, add, edit and delete users",
         "description": "",
-        "id": "test-add-new-user-into-application;the-customer-must-be-able-to-add-users-into-the-application",
+        "id": "test-all-user-features-into-the-application;the-customer-must-be-able-to-log-in--add--edit-and-delete-users",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2617000000,
+              "duration": 2716000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Customer  opens addUser modal",
-            "match": {
-              "location": "com.example.StepDefinitions.AddUserTest.openAddUserModal()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 965000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Customer introduces valid credentials",
-            "match": {
-              "location": "com.example.StepDefinitions.AddUserTest.insertValidCredentials()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 678000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Upon submit a new user is created",
-            "match": {
-              "location": "com.example.StepDefinitions.AddUserTest.checkNewUserCreated()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Test add new user into application",
-    "description": "",
-    "id": "test-add-new-user-into-application",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/addUser.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2021-07-23T06:17:32.349Z",
-        "line": 3,
-        "name": "The customer must be able to edit a certain user\u0027s data",
-        "description": "",
-        "id": "test-edit-a-user-s-data;the-customer-must-be-able-to-edit-a-certain-user-s-data",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2241000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Customer  opens ediUser modal",
-            "match": {
-              "location": "com.example.StepDefinitions.EditUserPageTest.openEditUserModal()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1663000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Customer introduces new valid credentials",
-            "match": {
-              "location": "com.example.StepDefinitions.EditUserPageTest.updateUserData()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 618000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Upon submit the new data is displayed for that user",
-            "match": {
-              "location": "com.example.StepDefinitions.EditUserPageTest.submitAndCheckNewData()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Test edit a user\u0027s data",
-    "description": "",
-    "id": "test-edit-a-user-s-data",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/editUser.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2021-07-23T06:17:36.876Z",
-        "line": 3,
-        "name": "The customer must be able to login after entering correct username and password",
-        "description": "",
-        "id": "test-login-into-application;the-customer-must-be-able-to-login-after-entering-correct-username-and-password",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1910000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Open Firefox and access http://localhost:4200/",
+            "name": "Customer logs into the application",
             "match": {
               "location": "com.example.StepDefinitions.LoginPageTest.launchProgram()"
             },
@@ -141,36 +25,48 @@
           },
           {
             "result": {
-              "duration": 66000000,
+              "duration": 1254000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "Customer introduces valid username and password",
+            "line": 7,
+            "name": "Customer is able to add a new user",
             "match": {
-              "location": "com.example.StepDefinitions.LoginPageTest.enterValidCredentials()"
+              "location": "com.example.StepDefinitions.LoginPageTest.checkAddUserSuccessful()"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 634000000,
+              "duration": 2296000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "Upon click, customer is logged in successfully and redirected on http://localhost:4200/users",
+            "line": 9,
+            "name": "Customer is able to edit an existing user",
             "match": {
-              "location": "com.example.StepDefinitions.LoginPageTest.checkLoginSuccessful()"
+              "location": "com.example.StepDefinitions.LoginPageTest.checkEditUserSuccessful()"
             },
-            "keyword": "Then "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 465000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Customer is able to delete a user",
+            "match": {
+              "location": "com.example.StepDefinitions.LoginPageTest.checkDeleteUserSuccessful()"
+            },
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Test login into application",
+    "name": "Test all user features into the application",
     "description": "",
-    "id": "test-login-into-application",
+    "id": "test-all-user-features-into-the-application",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/userLogin.feature",
+    "uri": "file:src/test/resources/features/userFeatures.feature",
     "tags": []
   }
 ]
