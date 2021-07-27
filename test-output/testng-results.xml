@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite1" duration-ms="8075" started-at="2021-07-27T12:03:53 EEST" finished-at="2021-07-27T12:04:02 EEST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.TestRunner@31dc339b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="LoginAddEditTest" duration-ms="8075" started-at="2021-07-27T12:03:53 EEST" finished-at="2021-07-27T12:04:02 EEST">
+      <class name="com.example.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.example.TestRunner@31dc339b]" name="setUpClass" is-config="true" duration-ms="362" started-at="2021-07-27T12:03:53 EEST" finished-at="2021-07-27T12:03:54 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.example.TestRunner@31dc339b]" name="runScenario" duration-ms="7604" started-at="2021-07-27T12:03:54 EEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-07-27T12:04:01 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["The customer must be able to log in, add, edit and delete users"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test all user features into the application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.example.TestRunner@31dc339b]" name="tearDownClass" is-config="true" duration-ms="84" started-at="2021-07-27T12:04:01 EEST" finished-at="2021-07-27T12:04:02 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.example.TestRunner -->
+    </test> <!-- LoginAddEditTest -->
+  </suite> <!-- TestSuite1 -->
+</testng-results>

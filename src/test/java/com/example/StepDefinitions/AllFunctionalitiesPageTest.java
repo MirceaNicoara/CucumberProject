@@ -1,6 +1,8 @@
 package com.example.StepDefinitions;
 
+import com.example.AddOrEditUserPage;
 import com.example.LoginPage;
+import com.example.UsersListPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,8 +17,10 @@ import org.testng.Assert;
 
 import java.util.List;
 
-public class LoginPageTest {
+public class AllFunctionalitiesPageTest {
     LoginPage loginPageObject;
+    AddOrEditUserPage addOrEditUserPageObject;
+    UsersListPage usersListPageObject;
     WebDriver driver;
     String randomUsername, randomEmail, randomFullName, randomPassword;
     WebDriverWait myWaitVariable;
@@ -25,6 +29,8 @@ public class LoginPageTest {
     public void launchProgram() {
         driver = new FirefoxDriver();
         loginPageObject = new LoginPage(driver);
+        addOrEditUserPageObject = new AddOrEditUserPage(driver);
+        usersListPageObject = new UsersListPage(driver);
         myWaitVariable = new WebDriverWait(driver, 5);
         driver.get("http://localhost:4200");
         loginPageObject.getUsernameForLogin().sendKeys("loginUsername");
