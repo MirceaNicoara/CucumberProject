@@ -113,4 +113,9 @@ public class AllFunctionalitiesPageTest {
         // checking presence == false
         Assert.assertEquals(deletedElement, false);
     }
+
+    @And("Customer exits the application")
+    public void customerExitsTheApplication() {
+        driver.quit();
+    }
 }

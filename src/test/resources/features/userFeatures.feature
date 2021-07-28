@@ -10,6 +10,8 @@ Feature: Test all user features into the application
 
     And Customer is able to delete a user
 
+    And Customer exits the application
+
     Examples:
       | username   | email                 | fullName           | password       |
       | ParamUser1 | ParamEmail1@gmail.com | ParamUser1FullName | ParamUser1Pass |

@@ -3,8 +3,8 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-07-28T06:15:47.941Z",
-        "line": 15,
+        "start_timestamp": "2021-07-28T06:22:36.463Z",
+        "line": 17,
         "name": "The customer must be able to log in, add, edit and delete users",
         "description": "",
         "id": "test-all-user-features-into-the-application;the-customer-must-be-able-to-log-in--add--edit-and-delete-users;;2",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2325000000,
+              "duration": 2461000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1315000000,
+              "duration": 1256000000,
               "status": "passed"
             },
             "line": 7,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 2373000000,
+              "duration": 2388000000,
               "status": "passed"
             },
             "line": 9,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 454000000,
+              "duration": 476000000,
               "status": "passed"
             },
             "line": 11,
@@ -76,12 +76,24 @@
               "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkDeleteUserSuccessful()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 415000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Customer exits the application",
+            "match": {
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.customerExitsTheApplication()"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-07-28T06:15:54.430Z",
-        "line": 16,
+        "start_timestamp": "2021-07-28T06:22:43.489Z",
+        "line": 18,
         "name": "The customer must be able to log in, add, edit and delete users",
         "description": "",
         "id": "test-all-user-features-into-the-application;the-customer-must-be-able-to-log-in--add--edit-and-delete-users;;3",
@@ -90,7 +102,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2131000000,
+              "duration": 2128000000,
               "status": "passed"
             },
             "line": 5,
@@ -102,7 +114,7 @@
           },
           {
             "result": {
-              "duration": 1290000000,
+              "duration": 1285000000,
               "status": "passed"
             },
             "line": 7,
@@ -132,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 2360000000,
+              "duration": 2366000000,
               "status": "passed"
             },
             "line": 9,
@@ -144,7 +156,7 @@
           },
           {
             "result": {
-              "duration": 452000000,
+              "duration": 464000000,
               "status": "passed"
             },
             "line": 11,
@@ -153,12 +165,24 @@
               "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkDeleteUserSuccessful()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 417000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Customer exits the application",
+            "match": {
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.customerExitsTheApplication()"
+            },
+            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-07-28T06:16:00.673Z",
-        "line": 17,
+        "start_timestamp": "2021-07-28T06:22:50.161Z",
+        "line": 19,
         "name": "The customer must be able to log in, add, edit and delete users",
         "description": "",
         "id": "test-all-user-features-into-the-application;the-customer-must-be-able-to-log-in--add--edit-and-delete-users;;4",
@@ -167,7 +191,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2226000000,
+              "duration": 2011000000,
               "status": "passed"
             },
             "line": 5,
@@ -179,7 +203,7 @@
           },
           {
             "result": {
-              "duration": 1337000000,
+              "duration": 1286000000,
               "status": "passed"
             },
             "line": 7,
@@ -209,7 +233,7 @@
           },
           {
             "result": {
-              "duration": 2357000000,
+              "duration": 2341000000,
               "status": "passed"
             },
             "line": 9,
@@ -221,13 +245,25 @@
           },
           {
             "result": {
-              "duration": 450000000,
+              "duration": 472000000,
               "status": "passed"
             },
             "line": 11,
             "name": "Customer is able to delete a user",
             "match": {
               "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkDeleteUserSuccessful()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 414000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Customer exits the application",
+            "match": {
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.customerExitsTheApplication()"
             },
             "keyword": "And "
           }
