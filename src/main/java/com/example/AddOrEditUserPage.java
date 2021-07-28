@@ -26,6 +26,7 @@ public class AddOrEditUserPage {
     @FindBy(id = "mat-input-3")
     private WebElement passwordToAddOrEdit;
     @FindBy(xpath = "(//span[@class='mat-checkbox-inner-container'])[1]")
+//                   (//span[@class='mat-checkbox-inner-container'])[1]
     private WebElement traitToAddOrEdit1;
     @FindBy(xpath = "(//span[@class='mat-checkbox-inner-container'])[2]")
     private WebElement traitToAddOrEdit2;

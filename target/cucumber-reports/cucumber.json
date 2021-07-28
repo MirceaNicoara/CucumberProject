@@ -3,59 +3,231 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-07-26T11:40:29.146Z",
-        "line": 3,
+        "start_timestamp": "2021-07-28T06:15:47.941Z",
+        "line": 15,
         "name": "The customer must be able to log in, add, edit and delete users",
         "description": "",
-        "id": "test-all-user-features-into-the-application;the-customer-must-be-able-to-log-in--add--edit-and-delete-users",
+        "id": "test-all-user-features-into-the-application;the-customer-must-be-able-to-log-in--add--edit-and-delete-users;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2716000000,
+              "duration": 2325000000,
               "status": "passed"
             },
             "line": 5,
             "name": "Customer logs into the application",
             "match": {
-              "location": "com.example.StepDefinitions.LoginPageTest.launchProgram()"
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.launchProgram()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1254000000,
+              "duration": 1315000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "Customer is able to add a new user",
+            "name": "Customer is able to add a new user using these values \"ParamUser1\", \"ParamEmail1@gmail.com\", \"ParamUser1FullName\" and \"ParamUser1Pass\"",
             "match": {
-              "location": "com.example.StepDefinitions.LoginPageTest.checkAddUserSuccessful()"
+              "arguments": [
+                {
+                  "val": "\"ParamUser1\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"ParamEmail1@gmail.com\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"ParamUser1FullName\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"ParamUser1Pass\"",
+                  "offset": 118
+                }
+              ],
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.customerIsAbleToAddANewUserUsingTheseValuesAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2296000000,
+              "duration": 2373000000,
               "status": "passed"
             },
             "line": 9,
             "name": "Customer is able to edit an existing user",
             "match": {
-              "location": "com.example.StepDefinitions.LoginPageTest.checkEditUserSuccessful()"
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkEditUserSuccessful()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 465000000,
+              "duration": 454000000,
               "status": "passed"
             },
             "line": 11,
             "name": "Customer is able to delete a user",
             "match": {
-              "location": "com.example.StepDefinitions.LoginPageTest.checkDeleteUserSuccessful()"
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkDeleteUserSuccessful()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-28T06:15:54.430Z",
+        "line": 16,
+        "name": "The customer must be able to log in, add, edit and delete users",
+        "description": "",
+        "id": "test-all-user-features-into-the-application;the-customer-must-be-able-to-log-in--add--edit-and-delete-users;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2131000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Customer logs into the application",
+            "match": {
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.launchProgram()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1290000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Customer is able to add a new user using these values \"ParamUser2\", \"ParamEmail2@gmail.com\", \"ParamUser2FullName\" and \"ParamUser2Pass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ParamUser2\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"ParamEmail2@gmail.com\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"ParamUser2FullName\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"ParamUser2Pass\"",
+                  "offset": 118
+                }
+              ],
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.customerIsAbleToAddANewUserUsingTheseValuesAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2360000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Customer is able to edit an existing user",
+            "match": {
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkEditUserSuccessful()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 452000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Customer is able to delete a user",
+            "match": {
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkDeleteUserSuccessful()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-28T06:16:00.673Z",
+        "line": 17,
+        "name": "The customer must be able to log in, add, edit and delete users",
+        "description": "",
+        "id": "test-all-user-features-into-the-application;the-customer-must-be-able-to-log-in--add--edit-and-delete-users;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2226000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Customer logs into the application",
+            "match": {
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.launchProgram()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1337000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Customer is able to add a new user using these values \"ParamUser3\", \"ParamEmail3@gmail.com\", \"ParamUser3FullName\" and \"ParamUser3Pass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ParamUser3\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"ParamEmail3@gmail.com\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"ParamUser3FullName\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"ParamUser3Pass\"",
+                  "offset": 118
+                }
+              ],
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.customerIsAbleToAddANewUserUsingTheseValuesAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2357000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Customer is able to edit an existing user",
+            "match": {
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkEditUserSuccessful()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 450000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Customer is able to delete a user",
+            "match": {
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkDeleteUserSuccessful()"
             },
             "keyword": "And "
           }

@@ -39,32 +39,22 @@ public class AllFunctionalitiesPageTest {
         Assert.assertEquals(driver.getCurrentUrl(), "http://localhost:4200/users");
     }
 
-    @Then("^Customer is able to add a new user$")
-    public void checkAddUserSuccessful() {
-        // clicking addUserButton
+    @Then("Customer is able to add a new user using these values {string}, {string}, {string} and {string}")
+    public void customerIsAbleToAddANewUserUsingTheseValuesAnd(String username, String email, String fullName, String password) {
         loginPageObject.getAddUserButton().click();
-        // generating random values
-        randomUsername = loginPageObject.getRandomString();
-        randomEmail = randomUsername + "_email@gmail.com";
-        randomFullName = randomUsername + randomUsername;
-        randomPassword = randomUsername + "123";
-        // completing the form
-        loginPageObject.insertCredentials(randomUsername, randomEmail, randomFullName, randomPassword);
+        loginPageObject.insertCredentials(username, email, fullName, password);
         loginPageObject.selectTraitsAndGender();
-        // clicking submit
         myWaitVariable.until(ExpectedConditions.elementToBeClickable(loginPageObject.getSubmitButtonAddOrEdit())).click();
-        // getting the element added
         List<WebElement> usersList = driver.findElements(By.tagName("app-user-card"));
         int lastCardId = usersList.size();
-        // checking values
         Assert.assertEquals(driver.findElement(By.xpath("/html/body/app-root/app-users/app-user-card[" + lastCardId + "]/div/div[2]/span"))
-                .getText(), randomUsername);
+                .getText(), username);
         Assert.assertEquals(driver.findElement(By.xpath("/html/body/app-root/app-users/app-user-card[" + lastCardId + "]/div/div[3]/span"))
-                .getText(), randomEmail);
+                .getText(), email);
         Assert.assertEquals(driver.findElement(By.xpath("/html/body/app-root/app-users/app-user-card[" + lastCardId + "]/div/div[1]/a/h1"))
-                .getText(), randomFullName);
+                .getText(), fullName);
         Assert.assertEquals(driver.findElement(By.xpath("/html/body/app-root/app-users/app-user-card[" + lastCardId + "]/div/div[4]/span"))
-                .getText(), randomPassword);
+                .getText(), password);
     }
 
     @And("^Customer is able to edit an existing user$")
