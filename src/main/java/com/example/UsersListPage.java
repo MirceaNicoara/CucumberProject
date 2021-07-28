@@ -11,7 +11,7 @@ public class UsersListPage {
 
     WebDriver driver;
 
-    @FindBy(xpath = "/html/body/app-root/app-users/app-header/mat-toolbar/button[2]/span[1]/span")
+    @FindBy(xpath = "(//span[contains(.,'Add user')])[2]")
     private WebElement addUserButton;
     @FindBy(xpath = "(//button[contains(.,'Edit')])[1]")
     private WebElement editUserButton;

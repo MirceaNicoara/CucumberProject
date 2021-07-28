@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-07-28T06:22:36.463Z",
+        "start_timestamp": "2021-07-28T13:13:22.739Z",
         "line": 17,
         "name": "The customer must be able to log in, add, edit and delete users",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2461000000,
+              "duration": 2536000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1256000000,
+              "duration": 1214000000,
               "status": "passed"
             },
             "line": 7,
@@ -49,37 +49,37 @@
                   "offset": 118
                 }
               ],
-              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.customerIsAbleToAddANewUserUsingTheseValuesAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.testCustomerCanAddNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2388000000,
+              "duration": 2324000000,
               "status": "passed"
             },
             "line": 9,
             "name": "Customer is able to edit an existing user",
             "match": {
-              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkEditUserSuccessful()"
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.testEditUserSuccessful()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 476000000,
+              "duration": 466000000,
               "status": "passed"
             },
             "line": 11,
             "name": "Customer is able to delete a user",
             "match": {
-              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkDeleteUserSuccessful()"
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.testDeleteUserSuccessful()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 415000000,
+              "duration": 406000000,
               "status": "passed"
             },
             "line": 13,
@@ -92,7 +92,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-07-28T06:22:43.489Z",
+        "start_timestamp": "2021-07-28T13:13:29.715Z",
         "line": 18,
         "name": "The customer must be able to log in, add, edit and delete users",
         "description": "",
@@ -102,7 +102,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2128000000,
+              "duration": 1976000000,
               "status": "passed"
             },
             "line": 5,
@@ -114,7 +114,7 @@
           },
           {
             "result": {
-              "duration": 1285000000,
+              "duration": 1276000000,
               "status": "passed"
             },
             "line": 7,
@@ -138,19 +138,19 @@
                   "offset": 118
                 }
               ],
-              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.customerIsAbleToAddANewUserUsingTheseValuesAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.testCustomerCanAddNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2366000000,
+              "duration": 2353000000,
               "status": "passed"
             },
             "line": 9,
             "name": "Customer is able to edit an existing user",
             "match": {
-              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkEditUserSuccessful()"
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.testEditUserSuccessful()"
             },
             "keyword": "And "
           },
@@ -162,13 +162,13 @@
             "line": 11,
             "name": "Customer is able to delete a user",
             "match": {
-              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkDeleteUserSuccessful()"
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.testDeleteUserSuccessful()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 417000000,
+              "duration": 303000000,
               "status": "passed"
             },
             "line": 13,
@@ -181,7 +181,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-07-28T06:22:50.161Z",
+        "start_timestamp": "2021-07-28T13:13:36.096Z",
         "line": 19,
         "name": "The customer must be able to log in, add, edit and delete users",
         "description": "",
@@ -191,7 +191,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2011000000,
+              "duration": 2075000000,
               "status": "passed"
             },
             "line": 5,
@@ -203,7 +203,7 @@
           },
           {
             "result": {
-              "duration": 1286000000,
+              "duration": 1247000000,
               "status": "passed"
             },
             "line": 7,
@@ -227,37 +227,37 @@
                   "offset": 118
                 }
               ],
-              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.customerIsAbleToAddANewUserUsingTheseValuesAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.testCustomerCanAddNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2341000000,
+              "duration": 2347000000,
               "status": "passed"
             },
             "line": 9,
             "name": "Customer is able to edit an existing user",
             "match": {
-              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkEditUserSuccessful()"
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.testEditUserSuccessful()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 472000000,
+              "duration": 468000000,
               "status": "passed"
             },
             "line": 11,
             "name": "Customer is able to delete a user",
             "match": {
-              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.checkDeleteUserSuccessful()"
+              "location": "com.example.StepDefinitions.AllFunctionalitiesPageTest.testDeleteUserSuccessful()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 414000000,
+              "duration": 313000000,
               "status": "passed"
             },
             "line": 13,

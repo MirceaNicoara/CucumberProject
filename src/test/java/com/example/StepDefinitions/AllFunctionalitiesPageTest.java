@@ -40,11 +40,12 @@ public class AllFunctionalitiesPageTest {
     }
 
     @Then("Customer is able to add a new user using these values {string}, {string}, {string} and {string}")
-    public void customerIsAbleToAddANewUserUsingTheseValuesAnd(String username, String email, String fullName, String password) {
-        loginPageObject.getAddUserButton().click();
-        loginPageObject.insertCredentials(username, email, fullName, password);
-        loginPageObject.selectTraitsAndGender();
-        myWaitVariable.until(ExpectedConditions.elementToBeClickable(loginPageObject.getSubmitButtonAddOrEdit())).click();
+    public void testCustomerCanAddNewUser(String username, String email, String fullName, String password) {
+//    public void customerIsAbleToAddANewUserUsingTheseValuesAnd(String username, String email, String fullName, String password) {
+        usersListPageObject.getAddUserButton().click();
+        addOrEditUserPageObject.insertCredentials(username, email, fullName, password);
+        addOrEditUserPageObject.selectTraitsAndGender();
+        myWaitVariable.until(ExpectedConditions.elementToBeClickable(addOrEditUserPageObject.getSubmitButtonAddOrEdit())).click();
         List<WebElement> usersList = driver.findElements(By.tagName("app-user-card"));
         int lastCardId = usersList.size();
         Assert.assertEquals(driver.findElement(By.xpath("/html/body/app-root/app-users/app-user-card[" + lastCardId + "]/div/div[2]/span"))
@@ -58,27 +59,27 @@ public class AllFunctionalitiesPageTest {
     }
 
     @And("^Customer is able to edit an existing user$")
-    public void checkEditUserSuccessful() {
+    public void testEditUserSuccessful() {
         driver.get("http://localhost:4200/users");
 
         // generating new random names to be inserted in the required fields
-        randomUsername = loginPageObject.getRandomString();
+        randomUsername = addOrEditUserPageObject.getRandomString();
         randomEmail = randomUsername + "_email@gmail.com";
         randomFullName = randomUsername + randomUsername;
         randomPassword = randomUsername + "123";
 
         // accessing edit functionality for user 1
-        loginPageObject.getEditUserButton().click();
+        usersListPageObject.getEditUserButton().click();
         myWaitVariable.until(ExpectedConditions.urlContains("http://localhost:4200/edit/1"));
 
         // clearing fields
-        loginPageObject.clearEditForm();
+        addOrEditUserPageObject.clearEditForm();
 
         // inserting new values
-        loginPageObject.insertCredentials(randomUsername, randomEmail, randomFullName, randomPassword);
+        addOrEditUserPageObject.insertCredentials(randomUsername, randomEmail, randomFullName, randomPassword);
 
         // submitting form
-        loginPageObject.getSubmitButtonAddOrEdit().click();
+        addOrEditUserPageObject.getSubmitButtonAddOrEdit().click();
         myWaitVariable.until(ExpectedConditions.urlContains("http://localhost:4200/users"));
 
         // checking values
@@ -93,7 +94,7 @@ public class AllFunctionalitiesPageTest {
     }
 
     @And("^Customer is able to delete a user$")
-    public void checkDeleteUserSuccessful() {
+    public void testDeleteUserSuccessful() {
         // getting list size for deleting last element on next step
         List<WebElement> usersList = driver.findElements(By.tagName("app-user-card"));
         int lastElementToBeDeleted = usersList.size();

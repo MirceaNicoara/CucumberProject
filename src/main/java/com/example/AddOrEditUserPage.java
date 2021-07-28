@@ -26,20 +26,19 @@ public class AddOrEditUserPage {
     @FindBy(id = "mat-input-3")
     private WebElement passwordToAddOrEdit;
     @FindBy(xpath = "(//span[@class='mat-checkbox-inner-container'])[1]")
-//                   (//span[@class='mat-checkbox-inner-container'])[1]
-    private WebElement traitToAddOrEdit1;
+    private WebElement traitFocused;
     @FindBy(xpath = "(//span[@class='mat-checkbox-inner-container'])[2]")
-    private WebElement traitToAddOrEdit2;
+    private WebElement traitCaring;
     @FindBy(xpath = "(//span[@class='mat-checkbox-inner-container'])[3]")
-    private WebElement traitToAddOrEdit3;
+    private WebElement traitPerfectionist;
     @FindBy(xpath = "(//span[@class='mat-checkbox-inner-container'])[4]")
-    private WebElement traitToAddOrEdit4;
+    private WebElement traitCourageous;
     @FindBy(xpath = "(//span[@class='mat-radio-outer-circle'])[1]")
-    private WebElement genderToAddOrEdit1;
+    private WebElement genderMale;
     @FindBy(xpath = "(//span[@class='mat-radio-outer-circle'])[2]")
-    private WebElement genderToAddOrEdit2;
+    private WebElement genderFemale;
     @FindBy(xpath = "(//span[@class='mat-radio-outer-circle'])[3]")
-    private WebElement genderToAddOrEdit3;
+    private WebElement genderApacheH;
     @FindBy(xpath = "//span[contains(.,'Submit')]")
     private WebElement submitButtonAddOrEdit;
 
@@ -50,10 +49,10 @@ public class AddOrEditUserPage {
 
     public void clearEditForm() {
         clearInputFields();
-        traitToAddOrEdit1.click();
-        traitToAddOrEdit2.click();
-        traitToAddOrEdit3.click();
-        traitToAddOrEdit4.click();
+        traitFocused.click();
+        traitCaring.click();
+        traitPerfectionist.click();
+        traitCourageous.click();
     }
 
     public void clearInputFields() {
@@ -93,9 +92,8 @@ public class AddOrEditUserPage {
 
     public void selectTraitsAndGender() {
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-        jsExecutor.executeScript("arguments[0].click()", traitToAddOrEdit1);
-        jsExecutor.executeScript("arguments[0].click()", traitToAddOrEdit2);
-        jsExecutor.executeScript("arguments[0].click()", genderToAddOrEdit3);
+        jsExecutor.executeScript("arguments[0].click()", traitFocused);
+        jsExecutor.executeScript("arguments[0].click()", traitCaring);
+        jsExecutor.executeScript("arguments[0].click()", genderApacheH);
     }
-
 }
