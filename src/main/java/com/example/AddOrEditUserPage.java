@@ -25,19 +25,19 @@ public class AddOrEditUserPage {
     private WebElement fullNameToAddOrEdit;
     @FindBy(id = "mat-input-3")
     private WebElement passwordToAddOrEdit;
-    @FindBy(xpath = "(//span[@class='mat-checkbox-inner-container'])[1]")
+    @FindBy(xpath = "//span[contains(.,'Focused')]")
     private WebElement traitFocused;
-    @FindBy(xpath = "(//span[@class='mat-checkbox-inner-container'])[2]")
+    @FindBy(xpath = "//span[contains(.,'Caring')]")
     private WebElement traitCaring;
-    @FindBy(xpath = "(//span[@class='mat-checkbox-inner-container'])[3]")
+    @FindBy(xpath = "//span[contains(.,'Perfectionist')]")
     private WebElement traitPerfectionist;
-    @FindBy(xpath = "(//span[@class='mat-checkbox-inner-container'])[4]")
+    @FindBy(xpath = "//span[contains(.,'Courageous')]")
     private WebElement traitCourageous;
-    @FindBy(xpath = "(//span[@class='mat-radio-outer-circle'])[1]")
+    @FindBy(xpath = "//span[contains(.,'Male')]")
     private WebElement genderMale;
-    @FindBy(xpath = "(//span[@class='mat-radio-outer-circle'])[2]")
+    @FindBy(xpath = "//span[contains(.,'Female')]")
     private WebElement genderFemale;
-    @FindBy(xpath = "(//span[@class='mat-radio-outer-circle'])[3]")
+    @FindBy(xpath = "//span[contains(.,'Apache Helicopter')]")
     private WebElement genderApacheH;
     @FindBy(xpath = "//span[contains(.,'Submit')]")
     private WebElement submitButtonAddOrEdit;
